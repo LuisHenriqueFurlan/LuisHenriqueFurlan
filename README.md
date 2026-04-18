@@ -2,7 +2,7 @@
 
 <p align="center">
 💻 Estudante de Engenharia de Software <br>
-🚀 Focado em Backend (Node.js, APIs) <br>
+🚀 Focado em Backend e APIs <br>
 🎮 Gamer nas horas vagas
 </p>
 
@@ -10,43 +10,69 @@
 
 ## 🚀 Tecnologias
 
-- JavaScript / TypeScript
-- Node.js
-- Fastify
-- Prisma
-- Python
-- SQL
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,ts,nodejs,python,prisma,mysql" />
+</p>
 
 ---
 
-## 📌 Projetos
+## 🧠 LeetCode
 
-🔹 API de usuários  
-> API com autenticação usando Fastify + Prisma + Zod  
+<p align="center">
+  <a href="https://leetcode.com/SEU_USERNAME_LEETCODE/">
+    <img src="https://leetcard.jacoblin.cool/LuisFurlan?theme=dark&font=baloo&ext=heatmap" />
+  </a>
+</p>
 
-🔹 Sistema de entregas  
-> Projeto em Python com lógica de roteamento  
+<p align="center">
+  <a href="https://leetcode.com/LuisFurlanE/">
+    <img src="https://img.shields.io/badge/LeetCode-Perfil-orange?style=for-the-badge&logo=leetcode" />
+  </a>
+</p>
 
-🔹 Marketplace de carros  
-> Site de compra e venda  
+---
+
+## 📌 Projetos em destaque
+
+🔹 **API de Usuários**  
+> API com autenticação usando Fastify, Prisma e Zod  
+
+🔹 **Sistema de Entregas**  
+> Projeto em Python com menu interativo e lógica de roteamento  
+
+🔹 **Marketplace de Carros**  
+> Plataforma de compra e venda estilo OLX  
 
 ---
 
 ## 📊 Estatísticas
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=LuisHenriqueFurlan&show_icons=true&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LuisHenriqueFurlan&layout=compact&theme=tokyonight)
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=LuisHenriqueFurlan&show_icons=true&theme=tokyonight" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LuisHenriqueFurlan&layout=compact&theme=tokyonight" />
+</p>
 
 ---
 
 ## 📫 Contato
 
-- Email: (luishenriquefurlan0@gmail.com)
+<p align="center">
+  <a href="mailto: luishenriquefurlan0@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contato-red?style=for-the-badge&logo=gmail" />
+  </a>
+</p>
 
 ---
 
 ## 💡 Atualmente
 
-- Estudando backend com Node.js
-- Criando projetos para portfólio
+- 📚 Estudando Backend com Node.js  
+- 🧠 Aprendendo boas práticas (SOLID, Clean Code)  
+- 🚀 Construindo projetos para portfólio  
+
+---
+
+## ⚡ Curiosidades
+
+- 🎮 Gosto de videogames  
+- 💻 Curto aprender construindo projetos reais  
