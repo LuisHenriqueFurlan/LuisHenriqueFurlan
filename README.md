@@ -1,78 +1,33 @@
-<h1 align="center">Fala aí 👋, eu sou Luis Henrique</h1>
+name: generate snake animation
 
-<p align="center">
-💻 Estudante de Engenharia de Software <br>
-🚀 Focado em Backend e APIs <br>
-🎮 Gamer nas horas vagas
-</p>
+on:
+  schedule:
+    # runs once a day
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
 
----
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: generate snake animation svg
+        uses: Platane/snk/svg-only@v3
+        id: snake-gif
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-## 🚀 Tecnologias
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,nodejs,python,prisma,mysql" />
-</p>
-
----
-
-## 🧠 LeetCode
-
-<p align="center">
-  <a href="https://leetcode.com/SEU_USERNAME_LEETCODE/">
-    <img src="https://leetcard.jacoblin.cool/LuisFurlan?theme=dark&font=baloo&ext=heatmap" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://leetcode.com/LuisFurlanE/">
-    <img src="https://img.shields.io/badge/LeetCode-Perfil-orange?style=for-the-badge&logo=leetcode" />
-  </a>
-</p>
-
----
-
-## 📌 Projetos em destaque
-
-🔹 **API de Usuários**  
-> API com autenticação usando Fastify, Prisma e Zod  
-
-🔹 **Sistema de Entregas**  
-> Projeto em Python com menu interativo e lógica de roteamento  
-
-🔹 **Marketplace de Carros**  
-> Plataforma de compra e venda estilo OLX  
-
----
-
-## 📊 Estatísticas
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=LuisHenriqueFurlan&show_icons=true&theme=tokyonight" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LuisHenriqueFurlan&layout=compact&theme=tokyonight" />
-</p>
-
----
-
-## 📫 Contato
-
-<p align="center">
-  <a href="mailto: luishenriquefurlan0@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contato-red?style=for-the-badge&logo=gmail" />
-  </a>
-</p>
-
----
-
-## 💡 Atualmente
-
-- 📚 Estudando Backend com Node.js  
-- 🧠 Aprendendo boas práticas (SOLID, Clean Code)  
-- 🚀 Construindo projetos para portfólio  
-
----
-
-## ⚡ Curiosidades
-
-- 🎮 Gosto de videogames  
-- 💻 Curto aprender construindo projetos reais  
+      - name: push generated files to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
