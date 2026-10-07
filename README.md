@@ -8,17 +8,12 @@
 <h3><code>luis@github ~ $ whoami</code></h3>
 <table>
   <tr>
-    <td valign="top"><img src="./ascii-portrait.svg" width="440" alt="Retrato ASCII de Luís Henrique Furlan" /></td>
+    <td valign="top"><img src="./about-json.svg" width="440" alt="sobre.json: Luís Henrique Furlan · Engenharia de Software (UNIVAG) · Fullstack e Cibersegurança · Software House UNIVAG · TypeScript, Node.js, Fastify, React, Prisma, PostgreSQL, MySQL, Python" /></td>
     <td valign="top"><img src="./stats-card.svg" width="420" alt="Estatísticas de contribuição: sequências, dias ativos, melhor dia e contribuições por mês" /></td>
   </tr>
 </table>
 
 <br>
-
-<h3><code>luis@github ~ $ cat sobre.json</code></h3>
-<img src="./about-json.svg" width="860" alt="Luís Henrique Furlan · Engenharia de Software · luishenriquefurlan0@gmail.com · Dev Backend @ Software House UNIVAG" />
-
-<br><br>
 
 <h3><code>luis@github ~ $ ./links.sh</code></h3>
 

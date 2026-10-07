@@ -1,6 +1,0 @@
-# only needed locally, when you change the photo (prep_photo.py + make_ascii_svg.py)
-pillow
-numpy
-opencv-python
-rembg
-onnxruntime
