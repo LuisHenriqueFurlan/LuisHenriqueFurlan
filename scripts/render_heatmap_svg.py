@@ -17,10 +17,10 @@ PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
 #          none -> brightest (level 5 is a neon top end for the very best days)
 
 W = 860
-BAR_H = 28
+BAR_H = 0           # no window chrome: the grid sits straight on the page
 PAD_X = 22
 LEFT = 34          # room for weekday labels
-TOP = BAR_H + 36   # room for month labels
+TOP = 30           # room for month labels
 CELL, GAP = 12, 3
 STEP = CELL + GAP
 
@@ -75,7 +75,7 @@ def main():
     grid_w = weeks * STEP - GAP
     x0 = PAD_X + LEFT + (W - 2 * PAD_X - LEFT - grid_w) / 2
     grid_bottom = TOP + 7 * STEP - GAP
-    H = grid_bottom + 64
+    H = grid_bottom + 34
 
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
@@ -95,12 +95,7 @@ def main():
             "@keyframes fade{to{opacity:1}}",
         ]
     out.append("</style>")
-    out.append(f'<rect width="{W}" height="{H}" rx="10" fill="{BG}"/>')
-    out.append(f'<path d="M0 10a10 10 0 0 1 10-10h{W - 20}a10 10 0 0 1 10 10v{BAR_H - 10}H0z" fill="{BAR}"/>')
-    for i, col in enumerate(("#ff5f56", "#ffbd2e", "#27c93f")):
-        out.append(f'<circle cx="{16 + i * 16}" cy="{BAR_H / 2}" r="5" fill="{col}"/>')
-    out.append(f'<text x="{W / 2}" y="{BAR_H / 2 + 3.5}" text-anchor="middle">contributions.sh</text>')
-
+    out.append(f'<rect width="{W}" height="{H}" rx="6" fill="{BG}"/>')
     for week, name in month_labels:
         if week <= weeks - 2:
             out.append(f'<text x="{x0 + week * STEP:.1f}" y="{TOP - 8}">{name}</text>')
@@ -118,24 +113,12 @@ def main():
 
     end = 0.2 + (weeks + 6) * 0.022
     fstyle = "" if STATIC else f' style="animation-delay:{end:.2f}s"'
-    fy = grid_bottom + 34
+    fy = grid_bottom + 22
     if data:
-        stats = (
-            f'<tspan class="k">{fmt(data["total"])}</tspan> contribuições no último ano'
-            f' · sequência <tspan class="k">{data["current_streak"]}d</tspan>'
-            f' · recorde <tspan class="k">{data["longest_streak"]}d</tspan>'
-            f' · melhor dia <tspan class="k">{data["best_day"]["count"]}</tspan>'
-        )
+        stats = f'<tspan class="k">{fmt(data["total"])}</tspan> contribuições no último ano'
     else:
         stats = "aguardando a primeira atualização do GitHub Actions…"
-    out.append(f'<g class="f"{fstyle}><text class="s" x="{PAD_X}" y="{fy}">{stats}</text>')
-
-    # Less -> More legend, right-aligned
-    lx = W - PAD_X - len(PALETTE) * STEP - 40
-    out.append(f'<text x="{lx - 6}" y="{fy - 1}" text-anchor="end">menos</text>')
-    for i, c in enumerate(PALETTE):
-        out.append(f'<rect x="{lx + i * STEP}" y="{fy - 11}" width="{CELL}" height="{CELL}" rx="2.5" fill="{c}"/>')
-    out.append(f'<text x="{lx + len(PALETTE) * STEP + 4}" y="{fy - 1}">mais</text></g>')
+    out.append(f'<g class="f"{fstyle}><text class="s" x="{x0:.1f}" y="{fy}">{stats}</text></g>')
 
     out.append("</svg>")
     with open(OUT, "w", encoding="utf-8") as f:
