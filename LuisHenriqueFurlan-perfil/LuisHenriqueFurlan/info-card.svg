@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 652" width="490" height="652" role="img" aria-label="Info card: luis@furlan">
+<style>
+text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:13px;white-space:pre}
+.l{opacity:0;animation:in .35s ease-out forwards}
+@keyframes in{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.cur{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+</style>
+<rect width="490" height="652" rx="10" fill="#0d1117"/>
+<path d="M0 10a10 10 0 0 1 10-10h470a10 10 0 0 1 10 10v18H0z" fill="#161b22"/>
+<circle cx="16" cy="14.0" r="5" fill="#ff5f56"/>
+<circle cx="32" cy="14.0" r="5" fill="#ffbd2e"/>
+<circle cx="48" cy="14.0" r="5" fill="#27c93f"/>
+<text x="245.0" y="17.5" text-anchor="middle" fill="#8b949e" style="font-size:10px">neofetch</text>
+<g class="l" style="animation-delay:0.60s"><text x="22" y="62"><tspan fill="#7ee787" font-weight="700">luis</tspan><tspan fill="#c9d1d9">@</tspan><tspan fill="#7ee787" font-weight="700">furlan</tspan></text></g>
+<g class="l" style="animation-delay:0.72s"><text x="22" y="81.2" fill="#8b949e">-----------</text></g>
+<g class="l" style="animation-delay:0.84s"><text x="22" y="105.2"><tspan fill="#7ee787" font-weight="700">Nome</tspan><tspan fill="#c9d1d9">:</tspan></text><text x="114" y="105.2" fill="#c9d1d9">Luís Henrique Furlan</text></g>
+<g class="l" style="animation-delay:0.96s"><text x="22" y="129.2"><tspan fill="#7ee787" font-weight="700">Curso</tspan><tspan fill="#c9d1d9">:</tspan></text><text x="114" y="129.2" fill="#c9d1d9">Engenharia de Software</text></g>
+<g class="l" style="animation-delay:1.08s"><text x="22" y="153.2"><tspan fill="#7ee787" font-weight="700">Agora</tspan><tspan fill="#c9d1d9">:</tspan></text><text x="114" y="153.2" fill="#c9d1d9">Dev Backend @ Software House UNIVAG</text></g>
+<g class="l" style="animation-delay:1.20s"><text x="22" y="177.2"><tspan fill="#7ee787" font-weight="700">Estudo</tspan><tspan fill="#c9d1d9">:</tspan></text><text x="114" y="177.2" fill="#c9d1d9">Formação Back-End Node.js (Alura)</text></g>
+<g class="l" style="animation-delay:1.32s"><text x="22" y="201.2"><tspan fill="#7ee787" font-weight="700">Foco</tspan><tspan fill="#c9d1d9">:</tspan></text><text x="114" y="201.2" fill="#c9d1d9">APIs · bancos de dados · AppSec</text></g>
+<g class="l" style="animation-delay:1.44s"><text x="22" y="225.2"><tspan fill="#7ee787" font-weight="700">Buscando</tspan><tspan fill="#c9d1d9">:</tspan></text><text x="114" y="225.2" fill="#c9d1d9">estágio em TI / dados</text></g>
+<g class="l" style="animation-delay:1.56s"><text x="22" y="262.4"><tspan fill="#7ee787" font-weight="700">Stack</tspan><tspan fill="#c9d1d9">:</tspan></text><text x="114" y="262.4" fill="#c9d1d9">TypeScript · Node.js · Fastify</text></g>
+<g class="l" style="animation-delay:1.68s"><text x="22" y="286.4"></text><text x="114" y="286.4" fill="#c9d1d9">Prisma · PostgreSQL · MySQL</text></g>
+<g class="l" style="animation-delay:1.80s"><text x="22" y="310.4"></text><text x="114" y="310.4" fill="#c9d1d9">SQL Server · Python · React</text></g>
+<g class="l" style="animation-delay:1.92s"><text x="22" y="347.59999999999997"><tspan fill="#7ee787" font-weight="700">Destaques</tspan><tspan fill="#c9d1d9">:</tspan></text><text x="114" y="347.59999999999997" fill="#79c0ff">store-management-api</text></g>
+<g class="l" style="animation-delay:2.04s"><text x="22" y="371.59999999999997"></text><text x="114" y="371.59999999999997" fill="#8b949e">  - gestão de loja, em uso real</text></g>
+<g class="l" style="animation-delay:2.16s"><text x="22" y="395.59999999999997"></text><text x="114" y="395.59999999999997" fill="#79c0ff">nobres-assados-project</text></g>
+<g class="l" style="animation-delay:2.28s"><text x="22" y="419.59999999999997"></text><text x="114" y="419.59999999999997" fill="#8b949e">  - pedidos online + painel admin</text></g>
+<g class="l" style="animation-delay:2.40s"><text x="22" y="443.59999999999997"></text><text x="114" y="443.59999999999997" fill="#79c0ff">pncp-dispensa-cli</text></g>
+<g class="l" style="animation-delay:2.52s"><text x="22" y="467.59999999999997"></text><text x="114" y="467.59999999999997" fill="#8b949e">  - CLI de licitações abertas no PNCP</text></g>
+<g class="l" style="animation-delay:2.64s"><text x="22" y="491.59999999999997"></text><text x="114" y="491.59999999999997" fill="#79c0ff">robo-sumo-arduino</text></g>
+<g class="l" style="animation-delay:2.76s"><text x="22" y="515.5999999999999"></text><text x="114" y="515.5999999999999" fill="#8b949e">  - robô autônomo, máquina de estados</text></g>
+<g class="l" style="animation-delay:2.88s"><text x="22" y="552.8"><tspan fill="#7ee787" font-weight="700">Contato</tspan><tspan fill="#c9d1d9">:</tspan></text><text x="114" y="552.8" fill="#c9d1d9">luishenriquefurlan0@gmail.com</text></g>
+<g class="l" style="animation-delay:3.00s"><rect x="22" y="570.8" width="22" height="14" rx="2" fill="#ff7b72"/><rect x="46" y="570.8" width="22" height="14" rx="2" fill="#ffa657"/><rect x="70" y="570.8" width="22" height="14" rx="2" fill="#f2cc60"/><rect x="94" y="570.8" width="22" height="14" rx="2" fill="#7ee787"/><rect x="118" y="570.8" width="22" height="14" rx="2" fill="#79c0ff"/><rect x="142" y="570.8" width="22" height="14" rx="2" fill="#d2a8ff"/><rect x="166" y="570.8" width="22" height="14" rx="2" fill="#c9d1d9"/><rect x="190" y="570.8" width="22" height="14" rx="2" fill="#484f58"/></g>
+<g class="l" style="animation-delay:3.12s"><text x="22" y="614.8"><tspan fill="#7ee787">luis@github</tspan><tspan fill="#c9d1d9"> ~ $ </tspan></text><rect class="cur" x="139.0" y="603.8" width="8" height="14" fill="#c9d1d9"/></g>
+</svg>

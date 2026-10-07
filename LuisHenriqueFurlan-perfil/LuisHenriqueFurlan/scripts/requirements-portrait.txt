@@ -1,0 +1,7 @@
+# only needed locally, when you change the photo (prep_photo.py + make_ascii_svg.py)
+-r requirements.txt
+pillow
+numpy
+opencv-python
+rembg
+onnxruntime

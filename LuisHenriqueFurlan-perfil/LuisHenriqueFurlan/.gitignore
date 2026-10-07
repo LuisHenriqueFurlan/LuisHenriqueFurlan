@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+# a foto original e os intermediários ficam só na sua máquina
+source-photo.*
+source-prepped.png
+source-mask.png
