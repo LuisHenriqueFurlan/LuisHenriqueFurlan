@@ -1,28 +1,28 @@
 {
  "username": "LuisHenriqueFurlan",
- "generated_at": "2026-10-20T11:33:25+00:00",
+ "generated_at": "2026-10-21T11:46:14+00:00",
  "range": {
   "from": "2025-10-19",
-  "to": "2026-10-20"
+  "to": "2026-10-21"
  },
- "total": 159,
+ "total": 160,
  "current_streak": {
-  "days": 13,
+  "days": 14,
   "start": "2026-10-07",
-  "end": "2026-10-19"
+  "end": "2026-10-20"
  },
  "longest_streak": {
-  "days": 13,
+  "days": 14,
   "start": "2026-10-07",
-  "end": "2026-10-19"
+  "end": "2026-10-20"
  },
  "best_day": {
   "date": "2026-02-27",
   "count": 16
  },
- "active_days": 62,
- "total_days": 367,
- "avg_per_active_day": 2.6,
+ "active_days": 63,
+ "total_days": 368,
+ "avg_per_active_day": 2.5,
  "monthly": {
   "2025-10": 0,
   "2025-11": 0,
@@ -36,7 +36,7 @@
   "2026-07": 45,
   "2026-08": 29,
   "2026-09": 0,
-  "2026-10": 18
+  "2026-10": 19
  },
  "days": [
   {
@@ -1871,6 +1871,11 @@
   },
   {
    "date": "2026-10-20",
+   "count": 1,
+   "level": 1
+  },
+  {
+   "date": "2026-10-21",
    "count": 0,
    "level": 0
   }
